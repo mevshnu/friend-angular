@@ -2,7 +2,7 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <class class="class">
+            <table class="table">
                 <thead>
                 <tr>
                     <th>name</th>
@@ -12,14 +12,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr *ngFor="let i of friend">
                     <td>{{i.name}}</td>
                     <td>{{i.friendName}}</td>
                     <td>{{i.friendNickName}}</td>
                     <td>{{i.DescribeYourFriend}}</td>
                 </tr>
             </tbody>
-            </class>
+        </table>
         </div>
     </div>
 </div>
